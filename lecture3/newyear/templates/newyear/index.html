@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Is it New Year's?</title>
+        <link rel="stylesheet" href="{% static 'newyear/styles.css'%}">
+    </head>
+    <body>
+        {% if is_new_year%}
+            <h1> YES </h1>
+        {% else %}
+            <h1> NO </h1>
+        {% endif %}
+
+        <div>
+            <img src= "{%static 'newyear/god.jpg' %}" alt="Wriothesley">
+        </div>
+
+    </body>
+</html>
